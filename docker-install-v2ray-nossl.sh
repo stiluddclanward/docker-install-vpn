@@ -203,7 +203,7 @@ function get_ip {
 }
 
 function get_uuid {
-    uuid=$(curl -L uuid.dev 2>/dev/null);
+    uuid=$(uuidgen 2>/dev/null);
     echo "${uuid}";
 }
 
